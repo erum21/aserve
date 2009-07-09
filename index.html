@@ -1,1 +1,52 @@
-aserve.html
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>AllegroServe - a Web Application Server</title></head><body><center><h1>AllegroServe - a Web Application Server</h1></center>
+<h2>Description</h2>
+<div>AllegroServe has these components:<ul><li>HTTP/1.1 compliant web server capable of serving static and dynamic pages</li><li>HTML
+generation facility that seamlessly merges html tag printing with
+computation of dynamic content. The HTML generator matches perfectly
+with the HTML parser (which is in another project) to allow web pages
+to be read, modifed in Lisp and then regenerated.</li><li>HTTP client functions to access web sites and retrieve data.</li><li>Secure Socket Layer (SSL) for both the server and client.</li><li>Web Proxy facility with a local cache.</li><li>Comprehensive regression test suite that verifies the functionality of the client, server, proxy and SSL</li><li>high performance for static and dynamic web page delivery</li><li>Licensed under terms that ensure that it will always be open source and that encourages its use in commercial settings.</li></ul><font color="green">We've recently added these features:<ul><li>A new publish function that builds a page from static and dynamic data and handles caching of the result.</li><li>Access
+control mechanisms for publishing directories that gives the webmaster
+the ability to specify which files and directories in the tree should
+be visible.</li><li>The ability to run external CGI programs.</li><li>An improved virtual hosting system that supports different logging and error streams for each virtual host.</li></ul></font></div>
+<h2>Author</h2>
+John Foderaro, Franz Inc.
+<h2>Author's Comments</h2>
+<div>The server part of AllegroServe can be used either as a standalone
+web server or a module loaded into an application to provide a user
+interface to the application. AllegroServe's proxy ability allows it to
+run on the gateway machine between a company's internal network and the
+internet.AllegroServe's client functions allow Lisp programs to explore
+the web.<p>AllegroServe was also written and open sourced as a way to demonstrate network programming in Allegro Common Lisp. </p><p>AllegroServe was written according to a certain <a href="http://www.franz.com/%7Ejkf/coding_standards.html">coding standard</a> to demonstrate how Lisp programs are more readable  if certain macros and special forms are avoided.</p></div>
+<h2>Release History</h2>
+<div>AllegroServe releases occur when significant new features or bug
+fixes are made. The ChangeLog file that is part of the distribution
+describes the changes in each release.<a href="http://github.com/franzinc/aserve/blob/d00a6f1cc646caab8fafea81142182f08432716a/ChangeLog">This</a> is a sample of a ChangeLog file but may not be the most up to date version of that file.</div>
+<h2>Documentation</h2>
+<div>The links below may not point to the most up to date versions of
+the documents referenced. The appropriate documentation for any version
+of AllegroServe is found in the AllegroServe distribution.<ul><li>The <a href="aserve.html">AllegroServe Reference Manual</a> describes the client and server functions.</li><li>The <a href="tutorial.html">AllegroServe Tutorial</a> shows how easy it is to run AllegroServe and publish pages.</li><li>The <a href="htmlgen.html">HTML Generation manual</a> describes the language for generating HTML dynamically.</li></ul></div>
+<h2>References</h2>
+<ul><li>The <a href="ftp://ftp.isi.edu/in-notes/rfc2616.txt">HTTP/1.1 Specification</a>.</li><li>The <a href="http://www.w3.org/TR/html4/">HTML 4.01 Specification</a>.</li><li>The <a href="http://www.franz.com/support/documentation/current/doc/multiprocessing.htm">multiprocessing</a> extension to Common Lisp used in AllegroServe</li><li>The <a href="http://www.franz.com/support/documentation/current/doc/socket.htm">network socket</a> extension to Common Lisp used by AllegroServe.</li></ul>
+<h2>Platform</h2>
+AllegroServe works on all versions of Allegro Common Lisp since 5.0.1.
+<h2>Building</h2>
+<div>The instructions for building AllegroServe from source are located in the README.md file that is part of the aserve distribution. </div>
+<h2>Dependencies</h2>
+There are no dependences for AllegroServe.
+<h2>Files</h2>
+<div>AllegroServe is distributed as a gzipped tar file.  Windows users can use <a href="http://www.winzip.com/">WinZip</a> to recover the files from this type of archive. All releases of AllegroServe are found at <a href="ftp://ftp.franz.com/pub/aserve/">ftp://ftp.franz.com/pub/aserve/</a> and you'll likely want to choose the one with the highest version number.<p>git users can access the AllegroServe git respository using<a href="http://github.com/franzinc/aserve/tree/master">github's repository</a>
+Using git allows you to make changes to the AllegroServe source in branches and
+merged those changes into newer versions of AllegroServe.</p></div>
+<h2>Links</h2>
+<ul><li><a href="http://github.com/franzinc/aserve/tree/master">AllegroServe on github</a> - we've hosted an AllegroServe project on github in order to get more visibility.</li><li><a href="http://sourceforge.net/projects/portableaserve/">Portable AllegroServe</a> - Modifications to AllegroServe to make it run on Lisps other than Allegro Common Lisp.</li><li>The <a href="http://www.franz.com/%7Ejkf/ifstar.txt">source</a> for the popular <b>if*</b> macro used throughout AllegroServe</li><li><a href="http://www.ai.mit.edu/projects/iiip/doc/cl-http/home-page.html">CL-HTTP</a> - another webserver written in Lisp.</li></ul>
+<h2>License</h2>
+<div><p>The <i>aserve</i> source code is licensed under the terms of the <a href="http://opensource.franz.com/preamble.html">Lisp Lesser GNU Public License</a>,
+known as the LLGPL.  The LLGPL consists of a preamble and the <a href="http://opensource.franz.com/license.html">LGPL</a>.  Where
+these conflict, the preamble takes precedence.  aserve is referenced in the preamble as the <i>LIBRARY</i>.</p></div>
+<h2>Open Source</h2>This project is hosted on the <a href="http://opensource.franz.com/">http://opensource.franz.com</a> site. There is an informal community support and development mailing
+list (opensource@franz.com) for these open source projects. We encourage
+you to take advantage by subscribing to the list. Click <a href="http://opensource.franz.com/mailinglist.html">here</a> to
+subscribe or unsubscribe. Once you're subscribed, send email to
+opensource@franz.com with your questions, comments, suggestions, and
+patches.</body></html>
